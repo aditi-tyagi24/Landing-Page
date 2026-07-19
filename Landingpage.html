@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>The Quiet Cup</title>
+<style>
+  html {
+    scroll-behavior: smooth;
+  }
+    body {
+    margin: 0;
+    padding: 0;
+    background-image: linear-gradient(rgba(247, 241, 232, 0.9), rgba(247, 241, 232, 0.9)), url("https://i.pinimg.com/1200x/cc/96/d9/cc96d9199b9690d76fa1990f20cadf89.jpg");
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+  }
+  
+  nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 30px;
+    background-color: #6F4E37;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  nav p {
+    font-size: 20px;
+    font-weight: bold;
+    color:  white;;
+  }
+  .logo-group {
+    display: flex;
+    align-items: center;
+  }
+
+  .logo-icon {
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-right: 10px;
+  }
+  .nav-links a {
+    margin-left: 20px;
+    text-decoration: none;
+    color:  white;;
+  }
+  .nav-links a:hover {
+    color: #E8D9C5;;
+  }
+  .hero {
+    text-align: center;
+    padding: 60px 20px;
+  }
+  .hero h1 {
+    font-size: 36px;
+    color: #4A3728;
+    margin-bottom: 15px;
+  }
+  .hero p {
+    font-size: 18px;
+    color: #6B5745;
+    margin-bottom: 25px;
+  }
+  .hero button {
+    background-color: #A9825F;
+    color: white;
+    font-size: 16px;
+    padding: 12px 28px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  .hero button:hover {
+    background-color: #8B6A48;
+  }
+  .features {
+    display: flex;
+    justify-content: space-between;
+    padding: 40px 30px;
+  }
+  .features div {
+    background-color:white;
+    padding: 25px;
+    border-radius: 8px;
+    width: 30%;
+    text-align: center;
+  }
+  .features h3 {
+    color: #4A3728;
+    margin-bottom: 10px;
+  }
+  .features p {
+    color: #6B5745;
+    font-size: 15px;
+  }
+  footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #6F4E37;;
+    border-top: 1px solid #ddd;
+  }
+  footer p {
+    color:white;
+    font-size: 14px;
+  }
+  .menu {
+    padding: 40px 30px;
+    text-align: center;
+  }
+
+  .menu h2 {
+    color: #4A3728;
+    font-size: 26px;
+    margin-bottom: 25px;
+  }
+
+  .menu-item {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    max-width: 400px;
+    margin: 0 auto 15px auto;
+  }
+
+  .menu-item h3 {
+    color: #4A3728;
+    margin-bottom: 5px;
+  }
+
+  .menu-item p {
+    color: #6B5745;
+    font-size: 14px;
+    margin-bottom: 8px;
+  }
+
+  .menu-item span {
+    color: #A9825F;
+    font-weight: bold;
+  }
+  @media (max-width: 600px) {
+    nav {
+      flex-direction: column;
+    }
+    .nav-links a {
+      margin-left: 10px;
+      margin-right: 10px;
+    }
+    .hero h1 {
+      font-size: 28px;
+    }
+    .features {
+      flex-direction: column;
+    }
+    .features div {
+      width: 100%;
+      margin-bottom: 20px;
+    }
+  }
+
+</style>
+</head>
+<body>
+    <nav>
+    <div class="logo-group">
+      <img src="https://i.pinimg.com/736x/39/3b/b1/393bb1bb15940aea508dd07c5da23917.jpg" alt="logo" class="logo-icon">
+      <p>The Quiet Cup</p>
+    </div>
+    <div class="nav-links">
+      <a href="#home">Home</a>
+      <a href="#about">About</a>
+      <a href="#contact">Contact</a>
+    </div>
+  </nav>
+
+  <section class="hero" id="home">
+    <h1>A slow cup in a fast city</h1>
+    <p>A small neighborhood coffee bar built for lingering over a good drink.</p>
+    <button>See our menu</button>
+  </section>
+
+  <section class="features" id="about">
+    <div>
+      <h3>Single-Origin Beans</h3>
+      <p>We roast in small batches every week.</p>
+    </div>
+    <div>
+      <h3>A Calm Space</h3>
+      <p>Soft seating and quiet corners made for staying a while.</p>
+    </div>
+    <div>
+      <h3>Open Daily</h3>
+      <p>7 AM to 6 PM, every day of the week.</p>
+    </div>
+  </section>
+  <section class="menu">
+      <h2>A Few Favorites</h2>
+      <div class="menu-item">
+        <h3>Hot Coffee</h3>
+        <p>Freshly brewed, served hot and simple.</p>
+        <span>Rs. 95</span>
+      </div>
+      <div class="menu-item">
+        <h3>Cold Coffee</h3>
+        <p>Chilled, creamy, and refreshing.</p>
+        <span>Rs. 120</span>
+      </div>
+      <div class="menu-item">
+        <h3>Latte</h3>
+        <p>Espresso with steamed milk and a light foam top.</p>
+        <span>Rs. 135</span>
+      </div>
+    </section>
+
+  <footer id="contact">
+    <p>Contact us: hello@thequietcup.com</p>
+  </footer>
+
+</body>
+</html>
